@@ -12,6 +12,6 @@ import pl.pawel.linkshell.createyourself.model.Item;
 @Component
 @PropertySource("classpath:base_pl.properties")
 @ConfigurationProperties(prefix = "value")
-public class Value extends Item{
+public class Value extends Item {
 
 }

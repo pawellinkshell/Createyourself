@@ -12,7 +12,7 @@ import pl.pawel.linkshell.createyourself.model.Item;
 @Component
 @PropertySource("classpath:base_pl.properties")
 @ConfigurationProperties(prefix = "vision")
-public class Vision extends Item{
+public class Vision extends Item {
     private String ideaForPerfectLife;
     private boolean inspirative;
     private boolean aspirative;
