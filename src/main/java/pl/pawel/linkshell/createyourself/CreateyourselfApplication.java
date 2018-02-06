@@ -9,22 +9,22 @@ import org.springframework.context.annotation.Bean;
 import java.util.Arrays;
 
 @SpringBootApplication
-public class CreateYourselfApplication {
+public class CreateyourselfApplication {
 
-    public static void main(String[] args) {
-        SpringApplication.run(CreateYourselfApplication.class, args);
-    }
+	public static void main(String[] args) {
+		SpringApplication.run(CreateyourselfApplication.class, args);
+	}
 
-    @Bean
-    public CommandLineRunner commandLineRunner(ApplicationContext context) {
-        return args -> {
-            System.out.println("\nLet's inspect the beans provided by Spring Boot:\n");
+	@Bean
+	public CommandLineRunner commandLineRunner(ApplicationContext context) {
+		return args -> {
+			System.out.println("\nLet's inspect the beans provided by Spring Boot:\n");
 
-            String[] beanNames = context.getBeanDefinitionNames();
-            Arrays.sort(beanNames);
-            for (String beanName : beanNames) {
-                System.out.println(beanName);
-            }
-        };
-    }
+			String[] beanNames = context.getBeanDefinitionNames();
+			Arrays.sort(beanNames);
+			for (String beanName : beanNames) {
+				System.out.println(beanName);
+			}
+		};
+	}
 }

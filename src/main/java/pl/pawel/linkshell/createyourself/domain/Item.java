@@ -1,4 +1,4 @@
-package pl.pawel.linkshell.createyourself.model;
+package pl.pawel.linkshell.createyourself.domain;
 
 import lombok.Data;
 import lombok.NoArgsConstructor;
